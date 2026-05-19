@@ -31,9 +31,15 @@ The repository processes the raw dataset through a modular four-step pipeline:
 3. **`merge.py`**: Combines the outputs of the first two scripts side-by-side into a single dataset, removing duplicate identification columns to prevent redundancy.
 4. **`kick_bozuk_lines_etc.py`**: Cleans the merged dataset by filtering out corrupted or incomplete packets (retaining rows with "Geçerli" status) and dropping unnecessary columns to output a ready-to-train dataset.
 
-## Getting Started
-
+```bash
+python first_features.py
+python second_features.py
+python merge.py
+python kick_bozuk_lines_etc.py
+```
 ### Prerequisites
 Install the required Python libraries using pip:
 ```bash
 pip install pandas numpy scipy tqdm
+```
+
