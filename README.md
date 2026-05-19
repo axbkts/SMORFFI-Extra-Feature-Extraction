@@ -29,7 +29,7 @@ The repository processes the raw dataset through a modular four-step pipeline:
 1. **`first_features.py`**: Reads the raw preamble data, estimates the coarse and fine CFO, corrects the frequency offsets, performs subcarrier equalization, and computes base physical layer features (CFO, phase error vectors, magnitude error vectors, and fractal dimensions).
 2. **`second_features.py`**: Iterates over the raw signals to extract the 14 supplementary statistical, power-based, and non-linear complexity features.
 3. **`merge.py`**: Combines the outputs of the first two scripts side-by-side into a single dataset, removing duplicate identification columns to prevent redundancy.
-4. **`kick_bozuk_lines_etc.py`**: Cleans the merged dataset by filtering out corrupted or incomplete packets (retaining rows with "Geçerli" status) and dropping unnecessary columns to output a ready-to-train dataset.
+4. **`kick_bozuk_lines_etc.py`**: Cleans the merged dataset by filtering out corrupted or incomplete packets (retaining rows with "Geçerli-Valid" status) and dropping unnecessary columns to output a ready-to-train dataset.
 
 ```bash
 python first_features.py
