@@ -42,4 +42,20 @@ Install the required Python libraries using pip:
 ```bash
 pip install pandas numpy scipy tqdm
 ```
+## References and Citation
 
+If you use this dataset or feature extraction pipeline in your research, please cite the original SMORFFI paper:
+
+### IEEE Format
+Z. Guo, Z. Jia, J. Zhu, W. Huang, and Y. Chen, "SMORFFI: A Large-Scale Same-Model 2.4 GHz Wi-Fi Dataset and Reproducible Framework for RF Fingerprinting," arXiv preprint arXiv:2511.07770v2 [cs.NI], Nov. 2025.
+
+### BibTeX
+```bibtex
+@article{guo2025smorffi,
+  title={SMORFFI: A Large-Scale Same-Model 2.4 GHz Wi-Fi Dataset and Reproducible Framework for RF Fingerprinting},
+  author={Guo, Zewei and Jia, Zhen and Zhu, JinXiao and Huang, Wenhao and Chen, Yin},
+  journal={arXiv preprint arXiv:2511.07770v2},
+  year={2025},
+  month={Nov}
+}
+```
